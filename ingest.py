@@ -1,6 +1,4 @@
 # Importing the necessary libraries
-import os
-import chromadb
 from chromadb import PersistentClient
 import uuid
 import pypdf
