@@ -8,11 +8,7 @@ from sentence_transformers import SentenceTransformer
 import nltk
 nltk.download('punkt')
 from nltk.tokenize import sent_tokenize
-import sys
-import pysqlite3
 
-# Ensure that sqlite3 is replaced with pysqlite3
-sys.modules['sqlite3'] = pysqlite3
 
 # Initialize ChromaDB client
 chroma_client = PersistentClient(path="./chroma_store")
